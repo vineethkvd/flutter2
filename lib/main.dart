@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter2/screens/getx/view/home_page.dart';
+import 'package:flutter2/screens/getxexample2/my_cart.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       title: 'Flutter Demo',
-      home: MyHomePage(title: "Flutter demo"),
+      home: MyCart(),
     );
   }
 }

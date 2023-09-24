@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter2/screens/gestures/gesturessample.dart';
-
-
-import 'form/SnackBar/snakbarsample.dart';
+import 'package:flutter2/screens/getx/view/home_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: GesturesSample());
+    return const GetMaterialApp(
+      title: 'Flutter Demo',
+      home: MyHomePage(title: "Flutter demo"),
+    );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter2/screens/getx/view/home_page.dart';
 import 'package:flutter2/screens/getxexample2/my_cart.dart';
+import 'package:flutter2/screens/withoutgetx/withoutgetx.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -12,9 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      title: 'Flutter Demo',
-      home: MyCart(),
+    return MaterialApp(
+      home: WithoutGetX(),
     );
+    // return const GetMaterialApp(
+    //   title: 'Flutter Demo',
+    //   home: MyCart(),
+    // );
   }
 }
